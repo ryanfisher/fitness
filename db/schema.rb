@@ -11,13 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130416041727) do
+ActiveRecord::Schema.define(:version => 20130418032404) do
 
   create_table "users", :force => true do |t|
     t.string   "email"
     t.string   "username"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "weighings", :force => true do |t|
+    t.integer  "weight"
+    t.decimal  "body_fat",    :precision => 10, :scale => 0
+    t.decimal  "muscle_mass", :precision => 10, :scale => 0
+    t.decimal  "body_water",  :precision => 10, :scale => 0
+    t.decimal  "bone_mass",   :precision => 10, :scale => 0
+    t.date     "date"
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
   end
 
 end
