@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130418032404) do
+ActiveRecord::Schema.define(:version => 20130421231510) do
 
   create_table "users", :force => true do |t|
     t.string   "email"
@@ -22,10 +22,10 @@ ActiveRecord::Schema.define(:version => 20130418032404) do
 
   create_table "weighings", :force => true do |t|
     t.integer  "weight"
-    t.decimal  "body_fat",    :precision => 10, :scale => 0
-    t.decimal  "muscle_mass", :precision => 10, :scale => 0
-    t.decimal  "body_water",  :precision => 10, :scale => 0
-    t.decimal  "bone_mass",   :precision => 10, :scale => 0
+    t.decimal  "body_fat",    :precision => 10, :scale => 1
+    t.decimal  "muscle_mass", :precision => 10, :scale => 1
+    t.decimal  "body_water",  :precision => 10, :scale => 1
+    t.decimal  "bone_mass",   :precision => 10, :scale => 1
     t.date     "date"
     t.datetime "created_at",                                 :null => false
     t.datetime "updated_at",                                 :null => false
