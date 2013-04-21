@@ -1,5 +1,27 @@
 <h1>Weighings</h1>
 
-<p>Your content here.</p>
+<table>
+<tr>
+  <th>Date</th>
+  <th>Weight</th>
+  <th>Body Fat</th>
+  <th>Total Body Water</th>
+  <th>Muscle Mass</th>
+  <th>Bone Mass</th>
+</tr>
+<tr>
+{{#each weighing in controller}}
+<tr>
+  <td>{{weighing.date}}</td>
+  <td>{{weighing.weight}}</td>
+  <td>{{weighing.body_fat}}</td>
+  <td>{{weighing.body_water}}</td>
+  <td>{{weighing.muscle_mass}}</td>
+  <td>{{weighing.bone_mass}}</td>
+</tr>
+{{else}}
+  <tr><td colspan="6">There are no weighings.</td></tr>
+{{/each}}
+</table>
 
 {{outlet}}

@@ -1,5 +1,13 @@
-<h1>Application</h1>
+<header id="header">
+  <h2>{{#linkTo "index"}}Home{{/linkTo}}</h2>
 
-<p>Your content here.</p>
+  <nav>
+    <ul>
+      <li>{{#linkTo "weighings"}}Weighings{{/linkTo}}</li>
+    </ul>
+  </nav>
+</header>
 
+<div id="content">
 {{outlet}}
+</div>
