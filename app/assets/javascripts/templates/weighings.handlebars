@@ -1,5 +1,6 @@
 <h1>Weighings</h1>
 
+
 <table class="table table-striped">
 <tr>
   <th>Date</th>
@@ -21,6 +22,23 @@
 {{else}}
   <tr><td colspan="6">There are no weighings.</td></tr>
 {{/each}}
+<tr>
+  <td>{{newDateTime}}</td>
+  <td>{{newWeight}}</td>
+  <td>{{newBodyFat}}</td>
+  <td>{{newBodyWater}}</td>
+  <td>{{newMuscleMass}}</td>
+  <td>{{newBoneMass}}</td>
+</tr>
+<tr>
+  <td>{{view Ember.TextField valueBinding="newDateTime"}}</td>
+  <td>{{view Ember.TextField valueBinding="newWeight"}}</td>
+  <td>{{view Ember.TextField valueBinding="newBodyFat"}}</td>
+  <td>{{view Ember.TextField valueBinding="newBodyWater"}}</td>
+  <td>{{view Ember.TextField valueBinding="newMuscleMass"}}</td>
+  <td>{{view Ember.TextField valueBinding="newBoneMass"}}</td>
+</tr>
+
 </table>
 
 {{outlet}}
