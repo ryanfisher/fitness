@@ -8,5 +8,11 @@ Fitness.WeighingsController = Ember.ArrayController.extend({
       bone_mass: this.get('newBoneMass'),
       date: this.get('newDate')
     });
+    this.set('newWeight', '');
+    this.set('newBodyFat', '');
+    this.set('newBodyWater', '');
+    this.set('newMuscleMass', '');
+    this.set('newBoneMass', '');
+    this.set('newDate', '');
   }
 });
