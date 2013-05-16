@@ -1,6 +1,6 @@
 Fitness.WeighingsController = Ember.ArrayController.extend({
   addWeighing: function () {
-    this.pushObject({
+    Fitness.Weighing.createRecord({
       weight: this.get('newWeight'),
       body_fat: this.get('newBodyFat'),
       body_water: this.get('newBodyWater'),
