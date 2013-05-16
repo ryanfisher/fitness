@@ -14,5 +14,6 @@ Fitness.WeighingsController = Ember.ArrayController.extend({
     this.set('newMuscleMass', '');
     this.set('newBoneMass', '');
     this.set('newDate', '');
+    this.get('store').commit();
   }
 });
