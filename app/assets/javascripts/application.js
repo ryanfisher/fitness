@@ -18,6 +18,5 @@
 //= require ember-data
 //= require_self
 //= require fitness
-//= require Chart.min
 Fitness = Ember.Application.create();
 //= require_tree .
