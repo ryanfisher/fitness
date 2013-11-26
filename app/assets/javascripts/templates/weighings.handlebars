@@ -10,6 +10,14 @@
   <th>Muscle Mass</th>
   <th>Bone Mass</th>
 </tr>
+<tr>
+  <td>{{newDate}}</td>
+  <td>{{newWeight}}</td>
+  <td>{{newBodyFat}}</td>
+  <td>{{newBodyWater}}</td>
+  <td>{{newMuscleMass}}</td>
+  <td>{{newBoneMass}}</td>
+</tr>
 {{#each weighing in controller}}
 <tr>
   <td>{{weighing.date}}</td>
@@ -22,14 +30,6 @@
 {{else}}
   <tr><td colspan="6">There are no weighings.</td></tr>
 {{/each}}
-<tr>
-  <td>{{newDate}}</td>
-  <td>{{newWeight}}</td>
-  <td>{{newBodyFat}}</td>
-  <td>{{newBodyWater}}</td>
-  <td>{{newMuscleMass}}</td>
-  <td>{{newBoneMass}}</td>
-</tr>
 <tr>
   <td></td>
   <td>{{view Ember.TextField valueBinding="newWeight"}}</td>
