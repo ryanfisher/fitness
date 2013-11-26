@@ -1,4 +1,7 @@
 Fitness.WeighingsController = Ember.ArrayController.extend({
+  sortProperties: ['date'],
+  sortAscending: false,
+
   addWeighing: function () {
     Fitness.Weighing.createRecord({
       weight: this.get('newWeight'),
