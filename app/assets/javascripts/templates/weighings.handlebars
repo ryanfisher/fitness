@@ -11,7 +11,7 @@
   <th>Bone Mass</th>
 </tr>
 <tr>
-  <td>{{newDate}}</td>
+  <td>{{format-date newDate}}</td>
   <td>{{newWeight}}</td>
   <td>{{newBodyFat}}</td>
   <td>{{newBodyWater}}</td>
@@ -20,7 +20,7 @@
 </tr>
 {{#each weighing in controller}}
 <tr>
-  <td>{{weighing.date}}</td>
+  <td>{{format-date weighing.date}}</td>
   <td>{{weighing.weight}}</td>
   <td>{{weighing.body_fat}}</td>
   <td>{{weighing.body_water}}</td>
