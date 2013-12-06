@@ -1,9 +1,15 @@
+<label>Weight:</label>
 {{view Ember.TextField valueBinding="newWeight"}}
+<label>Body Fat:</label>
 {{view Ember.TextField valueBinding="newBodyFat"}}
+<label>Total Body Water:</label>
 {{view Ember.TextField valueBinding="newBodyWater"}}
+<label>Muscle Mass:</label>
 {{view Ember.TextField valueBinding="newMuscleMass"}}
+<label>Bone Mass:</label>
 {{view Ember.TextField valueBinding="newBoneMass"}}
 
+<br />
 <button class='btn btn-primary' {{action addWeighing}}>Add Weighing</button>
 
 {{outlet}}
