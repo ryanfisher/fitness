@@ -1,8 +1,12 @@
 <header id="header">
   <nav>
     <ul class="nav nav-tabs">
-      <li>{{#linkTo "weighings"}}Weighings{{/linkTo}}</li>
-      <li>{{#linkTo "weighing"}}Add new Weighing{{/linkTo}}</li>
+      {{#linkTo 'weighings' tagName='li' href='false'}}
+        {{#linkTo 'weighings'}}Weighings{{/linkTo}}
+      {{/linkTo}}
+      {{#linkTo 'weighing' tagName='li' href='false'}}
+        {{#linkTo 'weighing'}}Add new Weighing{{/linkTo}}
+      {{/linkTo}}
     </ul>
   </nav>
 </header>
