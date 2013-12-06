@@ -1,5 +1,9 @@
-<h1>Weighing</h1>
+{{view Ember.TextField valueBinding="newWeight"}}
+{{view Ember.TextField valueBinding="newBodyFat"}}
+{{view Ember.TextField valueBinding="newBodyWater"}}
+{{view Ember.TextField valueBinding="newMuscleMass"}}
+{{view Ember.TextField valueBinding="newBoneMass"}}
 
-<p>Your content here.</p>
+<button class='btn btn-primary' {{action addWeighing}}>Add Weighing</button>
 
 {{outlet}}

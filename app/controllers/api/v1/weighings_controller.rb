@@ -10,7 +10,8 @@ class Api::V1::WeighingsController < ApplicationController
   end
 
   def create
-    respond_with Weighing.create(weighing)
+    Weighing.create(weighing)
+    head :ok
   end
 
 private
