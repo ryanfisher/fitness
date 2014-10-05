@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '~>3.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -27,12 +27,8 @@ end
 gem 'jquery-rails'
 
 group :test, :development do
-  gem 'rspec-rails', '~>2.0'
+  gem 'rspec-rails', '~>3.0'
   gem 'zeus'
-end
-
-group :development do
-  gem 'guard-rspec'
 end
 
 # To use ActiveModel has_secure_password
