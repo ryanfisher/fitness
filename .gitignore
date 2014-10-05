@@ -18,3 +18,6 @@ config/database.yml
 
 # Vim files
 *.swp
+
+# Ignore coverage folder
+/coverage
